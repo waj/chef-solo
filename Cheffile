@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+site 'http://community.opscode.com/api/v1'
+
+# cookbook 'chef-client'
+
+# cookbook 'apache2', '>= 1.0.0'
+
+cookbook 'rvm', git: 'https://github.com/fnichol/chef-rvm'
+cookbook 'database'
+cookbook 'mysql'
+cookbook 'redis', git: 'https://github.com/miah/chef-redis'
+cookbook 'elasticsearch'
+cookbook 'java'
+cookbook 'apache2'
+cookbook 'passenger_apache2'
+cookbook 'postfix'
+
+# cookbook 'application_ruby'
+#cookbook 'mercurial', :git => 'https://github.com/priestjim/chef-mercurial'
+
+# cookbook 'postgresql',
+#   :git => 'https://github.com/findsyou/cookbooks',
+#   :ref => 'postgresql-improvements'
